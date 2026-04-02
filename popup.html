@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; padding: 16px; width: 240px; font-size: 13px; color: #333; }
+    h3 { margin: 0 0 8px; font-size: 14px; }
+    p  { margin: 4px 0; line-height: 1.6; }
+    code { background: #f4f4f4; padding: 1px 4px; border-radius: 3px; font-size:12px; }
+    .version { color: #aaa; font-size: 11px; margin-top: 12px; }
+    .badge { display:inline-block; background:#e8f4ff; color:#0072ff;
+             border-radius:4px; padding:1px 6px; font-size:11px; margin-left:4px; }
+  </style>
+</head>
+<body>
+  <h3>⏱ 视频创建时间计算器</h3>
+  <p>已自动在 <code>视频创建时间</code> 后方注入距今时长。</p>
+  <p>• 不足1小时：<code>一小时内</code></p>
+  <p>• 超过1小时：<code>x小时前</code>（向下取整）</p>
+  <hr style="border:none;border-top:1px solid #eee;margin:10px 0">
+  <p>支持自动更新 <span class="badge">Auto Update</span></p>
+  <p>浏览器将在后台静默获取最新版本。</p>
+  <p class="version" id="ver">v1.1.0</p>
+  <script>
+    const m = chrome.runtime.getManifest();
+    document.getElementById('ver').textContent = 'v' + m.version;
+  </script>
+</body>
+</html>

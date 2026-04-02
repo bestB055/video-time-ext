@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "视频创建时间计算器",
+  "version": "1.1.0",
+  "description": "在「视频创建时间」后自动显示距今时间，如「2小时前」",
+  "icons": {
+    "16":  "icon16.png",
+    "48":  "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js":      ["content.js"],
+      "run_at":  "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon":  "icon48.png"
+  },
+  "update_url": "https://YOUR_SERVER/video-time-ext/update.xml"
+}
