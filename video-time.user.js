@@ -7,8 +7,8 @@
 // @match        *://*/*
 // @grant        none
 // @run-at       document-idle
-// @updateURL    https://你的用户名.github.io/video-time-ext/video-time.user.js
-// @downloadURL  https://你的用户名.github.io/video-time-ext/video-time.user.js
+// @updateURL    https://bestB055.github.io/video-time-ext/video-time.user.js
+// @downloadURL  https://bestB055.github.io/video-time-ext/video-time.user.js
 // ==/UserScript==
 
 (() => {
