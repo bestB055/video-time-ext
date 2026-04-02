@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         视频创建时间计算器
-// @namespace    https://github.com/你的用户名/video-time-ext
+// @namespace    https://github.com/bestB055/video-time-ext
 // @version      1.1.0
 // @description  在「视频创建时间」后自动显示距今时长，如「2小时前」
-// @author       你的名字
+// @author       bestB055
 // @match        *://*/*
 // @grant        none
 // @run-at       document-idle
